@@ -7,8 +7,9 @@
 
 
 
-n =int(input)
+n =int(input())
 count_zero = 0
 count_one =  0
-for i in input:
-    
+for i in range(n):
+    x = int(input)
+
