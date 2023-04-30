@@ -14,16 +14,16 @@
 # 5
 # 5 4 3 2 1
 
-
-def my_power(a,b):
-    if b ==0:
+def degree_num(num_a,num_b):
+    if num_b == 0:
         return 1
     else:
-        return a* my_power(a,b-1)
+        return num_a * degree_num(num_a,num_b-1)
     
-a= int(input())
-b= int(input())
-print(my_power(a,b))
+num_a = int(input('Введите число, которое хотите возвести в степень: '))
+print()
+num_b = int(input('Введите степень в которую хотите возвести число: '))
+print(f'Число {num_a} в степени {num_b} равна = {degree_num(num_a,num_b)}')
 
 
 
